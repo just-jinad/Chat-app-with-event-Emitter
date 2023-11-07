@@ -1,0 +1,26 @@
+.chat-box {
+    background-color: #E0E0E0; /* Light gray background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #ACACAC, -10px -10px 20px #FFFFFF;
+}
+
+/* Custom CSS for the user list */
+.user-list {
+    background-color: #E0E0E0; /* Light gray background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #ACACAC, -10px -10px 20px #FFFFFF;
+}
+
+.sentMessage{
+    position: absolute;
+    top: 50%;
+    left: 29%;
+}
+
+.white-bold-icon {
+    color: white;
+    font-weight: bold;
+    border-radius: 90px;
+  }

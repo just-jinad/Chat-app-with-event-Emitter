@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent</title>
+</head>
+<body>
+    <div class="container  p-5 rounded w-50">
+        <h6 class="fw-bold text-center bg-secondary w-25 mx-auto rounded p-1">Today</h6>
+
+        <div class="col-md-4 user-list text-white fw-bold">
+            <p class="text-dark">For Real 😲!!</p>
+        </div>
+
+        <div class="col-md-4 user-list float-end text-white fw-bold">
+            <p class="text-dark">Of course bro 😊😊</p>
+        </div><br><br><br><br><br><br>
+
+        <div class="col-md-4 user-list float-end  text-dark fw-bold">
+            <p>{{this.userMessage}}</p>
+        </div>
+
+        <div class="inputone row">
+            <div class="col-md-9 chat-box">
+                <input type="text" placeholder="|Message" class="form-control user-list " [(ngModel)]="messageOne">
+                <!-- <i  class="bi bi-caret-right-fill bg-success p-2 white-bold-icon display-6 " style="cursor: pointer;"></i> -->
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="">
+            <app-child sendMessage={{messageOne}} (message)="commentReciever($event)"></app-child>
+        </div>
+    </div>
+</body>
+</html>

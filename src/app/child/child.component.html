@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child</title>
+</head>
+<body> 
+    
+    <div class="sentMessage fw-bold user-list container w-25 p-4">
+        <div class="">
+            {{sendMessage}}
+        </div>
+    </div>
+
+        <div class="col-md-4 user-list   w-50 container">
+            <div class="d-flex gap-3 ">
+                <i class="bi bi-emoji-smile display-6"></i>
+                <span class="w-75">
+                    <input type="text" placeholder="|Message" [(ngModel)]="reply" class="form-control user-list " >
+                </span> 
+               
+                <i (click)="deliverMessage()" class="bi bi-caret-right-fill bg-success p-2 white-bold-icon display-6 " style="cursor: pointer;"></i>
+                <i class="bi bi-camera-fill display-6 "  style="cursor: pointer;"></i>
+                <i class="bi bi-mic-fill display-6 bg-success p-1 border white-bold-icon"  style="cursor: pointer;"></i>     
+            </div>
+        </div>
+    </body>
+</html>
